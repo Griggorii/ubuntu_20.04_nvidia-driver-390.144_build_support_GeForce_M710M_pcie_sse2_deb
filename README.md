@@ -3,11 +3,11 @@ fast sync mit , nvidia , new compilator gcc-9 mod test , video driver stable , C
 
       Griggorii@gmail.com
 
-                                  Ubuntu 20.04 nvidia 340.108
+                                  Ubuntu 20.04 nvidia 390.144
 
 Donate dollar card VISA 4817 7601 8112 4706 fix developer engineer architect best world video core https://youtu.be/JbXiuuZlSsM
 
-Install mesa ultra perfomance build include mesa full my driver rebuild nvidia 340.108 install 
+Install mesa ultra perfomance build include mesa full my driver rebuild nvidia 390.144 install 
 
 https://github.com/Griggorii/Xorg_1.28-Mesa_23.0.1_libmesa_dri_Ubuntu_20.04/releases/tag/libmesa_dri
 
@@ -33,13 +33,13 @@ $ sudo bash -c "echo alias lbm-nouveau off >> /usr/lib/modprobe.d/nvidia-graphic
 
 $ sudo update
 
-              Download Nvidia_340.108_build_support_GeForce_M710M_pcie_sse2_deb.zip
+              Download Nvidia_390.144_build_support_GeForce_M710M_pcie_sse2_deb.zip
 
 https://github.com/Griggorii/ubuntu_20.04_nvidia-driver-390.144_build_support_GeForce_M710M_pcie_sse2_deb/releases/tag/nvidia
 
 unpack Nvidia_390.144_build_support_GeForce_M710M_pcie_sse2_deb.zip
 
-          Run terminal in derictory Nvidia_340.108_build_support_GeForce_M710M_pcie_sse2_deb
+          Run terminal in derictory Nvidia_390.144_build_support_GeForce_M710M_pcie_sse2_deb
 
 $ sudo dpkg  -i *.deb
 
