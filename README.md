@@ -1,5 +1,5 @@
 # ubuntu_20.04_nvidia-driver-390.144_build_support_GeForce_M710M_pcie_sse2_deb
-fast sync mit , nvidia , new compilator gcc-9 mod test , video driver stable , Cal Data Visualization Network
+fast sync mit , nvidia , new compilator gcc-9 mod test , video driver stable , Cal Data Visualization Network , nvidia_uvm , nvidia_drm , nvidia_modeset , drm_kms_helper nvidia_drm,i915 , drm drm_kms_helper,nvidia_drm,i915 ,ipmi_msghandler ipmi_devintf,nvidia.
 
       Griggorii@gmail.com
 
