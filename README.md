@@ -5,7 +5,7 @@ fast sync mit , nvidia , new compilator gcc-9 mod test , video driver stable , C
 
                                   Ubuntu 20.04 nvidia 390.144
 
-Donate dollar card VISA 4817 7601 8112 4706 fix developer engineer architect best world video core https://youtu.be/JbXiuuZlSsM
+Donate dollar card VISA 4817 7601 8112 4706 fix developer engineer architect best world video core https://youtu.be/0c2hR4DyHfo
 
 Install mesa ultra perfomance build include mesa full my driver rebuild nvidia 390.144 install 
 
