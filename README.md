@@ -63,6 +63,12 @@ Reboot
 
 Experimental xwayland https://www.if-not-true-then-false.com/2021/debian-ubuntu-linux-mint-nvidia-guide/4/
 
+check command
+
+$ lspci |grep -E "VGA|3D"
+
+$ lsmod |grep -e nouv -e nvidia
+
 _________________________________________________________________________________________
 
 Danger experiments blackscreen login copyright 2.0 nvidia-optimus prime
