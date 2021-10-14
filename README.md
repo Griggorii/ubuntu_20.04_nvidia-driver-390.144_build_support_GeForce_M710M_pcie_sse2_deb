@@ -61,6 +61,8 @@ $ sudo mv xorg.conf.d $HOME
 
 Reboot
 
+Experimental xwayland https://www.if-not-true-then-false.com/2021/debian-ubuntu-linux-mint-nvidia-guide/4/
+
 _________________________________________________________________________________________
 
 Danger experiments blackscreen login copyright 2.0 nvidia-optimus prime
