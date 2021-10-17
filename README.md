@@ -47,6 +47,10 @@ $ sudo apt install -f
 
 $ sudo apt-get install nvidia-settings nvidia-prime screen-resolution-extra libxnvctrl0
 
+$ chmod -R a+rwx Nvidia_Wayland_Support_Ubuntu_20.04.sh
+
+$ ./Nvidia_Wayland_Support_Ubuntu_20.04.sh
+
 $ sudo update-initramfs -u -v
 
 Fix black screen gdm3 login authorization freeze delete rm and mv
