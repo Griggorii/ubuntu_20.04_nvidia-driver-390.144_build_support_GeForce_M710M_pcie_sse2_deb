@@ -79,23 +79,26 @@ $ sudo prime-select nvidia
 
 On intel not stable screen freeze login and black screen blinking hyphen off Nvidia
 
-$ sudo rm /usr/lib/modprobe.d/blacklist-nvidia.conf
-
 $ sudo prime-select intel
 
 $ sudo rm /usr/lib/modprobe.d/blacklist-nvidia.conf
 
-cat << EOF > blacklist-nvidia.conf
-blacklist nvidia
-blacklist nvidia-drm
-blacklist nvidia-modeset
-alias nvidia off
-alias nvidia-drm off
-alias nvidia-modeset off
-EOF
+$ sudo bash -c "echo blacklist nvidia > /usr/lib/modprobe.d/blacklist-nvidia.conf"
+
+$ sudo bash -c "echo blacklist nvidia-drm >> /usr/lib/modprobe.d/blacklist-nvidia.conf"
+
+$ sudo bash -c "echo blacklist nvidia-modeset >> /usr/lib/modprobe.d/blacklist-nvidia.conf"
+
+$ sudo bash -c "echo alias nvidia off >> /usr/lib/modprobe.d/blacklist-nvidia.conf"
+
+$ sudo bash -c "echo alias nvidia-drm off >> /usr/lib/modprobe.d/blacklist-nvidia.conf"
+
+$ sudo bash -c "echo alias nvidia-modeset off >> /usr/lib/modprobe.d/blacklist-nvidia.conf"
 
 $ sudo mv blacklist-nvidia.conf /usr/lib/modprobe.d && sudo update-initramfs -u -v && sudo reboot
 
-Idea amd analog intel not stable danger black screen
+_____________________________________________________________________________________________________
+
+My beta idea amd analog intel not stable danger black screen alias ?
 
 $ sudo prime-select amd
