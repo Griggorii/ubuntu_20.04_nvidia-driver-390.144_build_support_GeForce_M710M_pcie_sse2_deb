@@ -71,7 +71,7 @@ $ lsmod |grep -e nouv -e nvidia
 
 _________________________________________________________________________________________
 
-Danger experiments blackscreen login copyright 2.0 nvidia-optimus prime
+Danger experiments ! blackscreen login copyright 2.0 nvidia-optimus prime
 
 On Nvidia stable off intel
 
@@ -79,7 +79,22 @@ $ sudo prime-select nvidia
 
 On intel not stable screen freeze login and black screen blinking hyphen off Nvidia
 
+$ sudo rm /usr/lib/modprobe.d/blacklist-nvidia.conf
+
 $ sudo prime-select intel
+
+$ sudo rm /usr/lib/modprobe.d/blacklist-nvidia.conf
+
+cat << EOF > blacklist-nvidia.conf
+blacklist nvidia
+blacklist nvidia-drm
+blacklist nvidia-modeset
+alias nvidia off
+alias nvidia-drm off
+alias nvidia-modeset off
+EOF
+
+$ sudo mv blacklist-nvidia.conf /usr/lib/modprobe.d && sudo update-initramfs -u -v && sudo reboot
 
 Idea amd analog intel not stable danger black screen
 
