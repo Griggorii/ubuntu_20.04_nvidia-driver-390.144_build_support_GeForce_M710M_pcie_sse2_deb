@@ -65,8 +65,6 @@ $ sudo mv xorg.conf.d $HOME
 
 Reboot
 
-Experimental xwayland https://www.if-not-true-then-false.com/2021/debian-ubuntu-linux-mint-nvidia-guide/4/
-
 check command
 
 $ lspci |grep -E "VGA|3D"
