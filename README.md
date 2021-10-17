@@ -95,10 +95,30 @@ $ sudo bash -c "echo alias nvidia-drm off >> /usr/lib/modprobe.d/blacklist-nvidi
 
 $ sudo bash -c "echo alias nvidia-modeset off >> /usr/lib/modprobe.d/blacklist-nvidia.conf"
 
-$ sudo mv blacklist-nvidia.conf /usr/lib/modprobe.d && sudo update-initramfs -u -v && sudo reboot
+$ sudo update-initramfs -u -v
+
+reboot
 
 _____________________________________________________________________________________________________
 
 My beta idea amd analog intel not stable danger black screen alias ?
 
 $ sudo prime-select amd
+
+$ sudo rm /usr/lib/modprobe.d/blacklist-nvidia.conf
+
+$ sudo bash -c "echo blacklist nvidia > /usr/lib/modprobe.d/blacklist-nvidia.conf"
+
+$ sudo bash -c "echo blacklist nvidia-drm >> /usr/lib/modprobe.d/blacklist-nvidia.conf"
+
+$ sudo bash -c "echo blacklist nvidia-modeset >> /usr/lib/modprobe.d/blacklist-nvidia.conf"
+
+$ sudo bash -c "echo alias nvidia off >> /usr/lib/modprobe.d/blacklist-nvidia.conf"
+
+$ sudo bash -c "echo alias nvidia-drm off >> /usr/lib/modprobe.d/blacklist-nvidia.conf"
+
+$ sudo bash -c "echo alias nvidia-modeset off >> /usr/lib/modprobe.d/blacklist-nvidia.conf"
+
+$ sudo update-initramfs -u -v
+
+reboot
