@@ -12,6 +12,8 @@ DRIVER=="nvidia", RUN+="/usr/lib/gdm3/gdm-wayland-session set daemon WaylandEnab
 EOF
 sudo cp 61-gdm.rules /usr/lib/udev/rules.d/
 EOF
+sudo cp 61-gdm.rules /lib/udev/rules.d/
+EOF
 sudo rm ./61-gdm.rules
 EOF
 rm ./61-gdm.rules
