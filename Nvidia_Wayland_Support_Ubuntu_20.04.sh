@@ -28,6 +28,24 @@ sudo bash -c "echo alias nouveau off >> /usr/lib/modprobe.d/nvidia-graphics-driv
 EOF
 sudo bash -c "echo alias lbm-nouveau off >> /usr/lib/modprobe.d/nvidia-graphics-drivers.conf"
 EOF
+cd /etc/X11
+EOF
+sudo mv xorg.conf $HOME
+EOF
+sudo mv xorg.conf.* $HOME
+EOF
+sudo rm xorg.conf.d $HOME
+EOF
+sudo rm -rf xorg.conf $HOME
+EOF
+sudo rm -rf xorg.conf.* $HOME
+EOF
+sudo rm -rf xorg.conf.d $HOME
+EOF
+sudo rm /usr/share/doc/libnvidia-gl-390/changelog.Debian.gz
+EOF
+cd -
+EOF
 sudo update-initramfs -u -v
 EOF
 notify-send "Перезагрузите компьютер wayland nvidia support | reboot computer wayland nvidia support By Griggorii real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706" 
