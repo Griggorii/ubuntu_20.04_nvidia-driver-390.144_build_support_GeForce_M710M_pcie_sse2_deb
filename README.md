@@ -51,6 +51,13 @@ $ chmod -R a+rwx Nvidia_Wayland_Support_Ubuntu_20.04.sh
 
 $ ./Nvidia_Wayland_Support_Ubuntu_20.04.sh
 
+$ sudo apt update
+
+Fix libGL error: No matching fbConfigs or visuals found
+libGL error: failed to load driver: swrast / script Nvidia_Wayland_Support_Ubuntu_20.04.sh
+
+$ sudo apt install libnvidia-gl-390:i386 -y
+
 $ sudo update-initramfs -u -v
 
 Fix black screen gdm3 login authorization freeze delete rm and mv
