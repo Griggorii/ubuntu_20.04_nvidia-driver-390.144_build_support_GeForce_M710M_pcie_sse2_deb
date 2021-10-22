@@ -18,6 +18,16 @@ sudo rm ./61-gdm.rules
 EOF
 rm ./61-gdm.rules
 EOF
+sudo rm '/usr/lib/modprobe.d/blacklist-nvidia.conf'
+EOF
+sudo bash -c "echo blacklist nouveau > /usr/lib/modprobe.d/nvidia-graphics-drivers.conf"
+EOF
+sudo bash -c "echo blacklist lbm-nouveau >> /usr/lib/modprobe.d/nvidia-graphics-drivers.conf"
+EOF
+sudo bash -c "echo alias nouveau off >> /usr/lib/modprobe.d/nvidia-graphics-drivers.conf"
+EOF
+sudo bash -c "echo alias lbm-nouveau off >> /usr/lib/modprobe.d/nvidia-graphics-drivers.conf"
+EOF
 sudo update-initramfs -u -v
 EOF
 notify-send "Перезагрузите компьютер wayland nvidia support | reboot computer wayland nvidia support By Griggorii real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706" 
