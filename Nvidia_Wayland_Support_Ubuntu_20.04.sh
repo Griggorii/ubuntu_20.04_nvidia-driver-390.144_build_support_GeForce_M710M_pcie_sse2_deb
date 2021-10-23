@@ -44,6 +44,8 @@ sudo rm -rf xorg.conf.d $HOME
 EOF
 sudo rm /usr/share/doc/libnvidia-gl-390/changelog.Debian.gz
 EOF
+sudo rm /usr/share/vulkan/icd.d/nvidia_icd.json
+EOF
 cd -
 EOF
 sudo update-initramfs -u -v
