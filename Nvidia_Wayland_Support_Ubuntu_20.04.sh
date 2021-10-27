@@ -2,8 +2,42 @@
 #Only real technologies, not any fictional parasitic distributions support real technology investments and donate VISA 4817 7601 8112 4706 Nvidia Wayland Support Ubuntu 20.04 driver 390.144 copyright 2.0 gdm3
 
 
-gsettings set org.gnome.mutter experimental-features [\"kms-modifiers\"]
-EOF
+gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['glx'"', '"'vmwgfx']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling'"', '"'scale-monitor-framebuffer']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['kms'"', '"'vkms']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['glx'"', '"'vmwgfx']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['qxl'"', '"'scale-monitor-framebuffer']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['vkms-modifiers']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+
+echo && clear && (sleep 1; killall /usr/bin/* )
+
+gsettings set org.gnome.mutter experimental-features "['kms'"', '"'vkms']"
+
+clear
+
 cat << EOF > 61-gdm.rules
 # enable Wayland on Hi1710 chipsets
 ATTR{vendor}=="0x19e5", ATTR{device}=="0x1711", RUN+="/usr/lib/gdm3/gdm-wayland-session set daemon WaylandEnable false"
